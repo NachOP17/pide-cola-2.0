@@ -1,0 +1,31 @@
+form {
+  position: fixed;
+  background-color: #085d20;
+  width: 100%;
+  color: #eee;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  transition: .6s;
+}
+
+form input,
+form textarea {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+form input[type=time],
+form input[type=submit] {
+  width: auto;
+}
+
+form label {
+  color: #eee;
+  margin-top: 10px;
+}
+
+.information-btn {
+  width: 90%;
+  color: #000;
+  cursor: pointer;
+}

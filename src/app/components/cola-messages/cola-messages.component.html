@@ -1,0 +1,78 @@
+
+  <div id="mensajes" [style.bottom]="inputIsOpen ? '200px' : '60px'">
+<!--         Mensaje Enviado por otra persona       -->
+      <div class="mensaje otros-mensajes">
+        <div class="nombre text-center">
+          <h4>Pedro Pérez</h4>
+        </div>
+        <div class="info-msj">
+          <p><strong>Zona:</strong> San Antonio.<p>
+          <p><strong>Hora:</strong> 1:00 pm</p>
+          <p><strong></strong></p>
+        </div>
+        <div class="botones text-center">
+          <button class="btn btn-outline-secondary text-center">Dar Cola</button>
+        </div>
+      </div>
+
+      <!--         Mensaje Enviado por otra persona       -->
+      <div class="mensaje otros-mensajes">
+        <div class="nombre text-center">
+          <h4>Carmen Castillo</h4>
+        </div>
+        <div class="info-msj">
+          <p><strong>Zona:</strong> Plaza Venezuela.<p>
+          <p><strong>Hora:</strong> 11:00 am</p>
+          <p><strong></strong></p>
+        </div>
+        <div class="botones text-center">
+          <button class="btn btn-outline-secondary text-center">Dar Cola</button>
+        </div>
+      </div>
+
+      <!--         Mensaje Enviado por otra persona       -->
+      <div class="mensaje otros-mensajes">
+        <div class="nombre text-center">
+          <h4>Roberto Gómez</h4>
+        </div>
+        <div class="info-msj">
+          <p><strong>Zona:</strong> Cumbres de Curumo.<p>
+          <p><strong>Hora:</strong> 3:00 pm</p>
+          <p><strong></strong></p>
+        </div>
+        <div class="botones text-center">
+          <button class="btn btn-outline-secondary text-center">Dar Cola</button>
+        </div>
+      </div>
+
+      <!--         Mensaje Enviado por otra persona       -->
+      <div class="mensaje otros-mensajes">
+        <div class="nombre text-center">
+          <h4>Juan Rodriguez</h4>
+        </div>
+        <div class="info-msj">
+          <p><strong>Zona:</strong> Plaza Venezuela.<p>
+          <p><strong>Hora:</strong> 10:00 am</p>
+          <p><strong></strong></p>
+        </div>
+        <div class="botones text-center">
+          <button class="btn btn-outline-secondary text-center">Dar Cola</button>
+        </div>
+      </div>
+
+      <!--        Mensaje enviado por mi        -->
+      <div *ngIf="myMessage[0]" class="espacio-mi-mensaje">
+        <div class="mi-mensaje mensaje">
+          <div class="nombre text-center">
+            <h4>Yo</h4>
+          </div>
+          <div class="info-msj">
+            <p><strong>Lugares a donde voy:</strong> {{myMessage[0].places}}<p>
+            <p><strong>Hora:</strong> {{myMessage[0].time}}</p>
+            <div class="text-center">
+              <a class="btn btn-outline-danger" (click)="removeMessage()">Cancelar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>

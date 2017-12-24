@@ -1,0 +1,41 @@
+.logo {
+  float: left;
+  width: 100px;
+}
+
+.title {
+  margin-top: 30px auto;
+  margin-bottom: 20px;
+  font-size: 3em !important;
+}
+
+.jumbotron {
+  background-color: rgba(200, 200, 200, 0.8);
+  width: 370px;
+  margin: 100px auto;
+  border-radius: 7px;
+  padding: 20px;
+}
+
+.login {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.login label {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.connected {
+  display: inline;
+  font-size: 1.2em !important;
+}
+
+.login-button {
+  margin-top: 30px;
+}
+
+.pass-forgotten {
+  margin-top: 17px;
+}

@@ -1,0 +1,129 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  transition: .6s;
+  background: #085d20;
+}
+
+.sidebar .primaryMenu {
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+  border-top: 1px solid #eee;
+}
+
+.sidebar .primaryMenu li {
+  list-style: none;
+  display: block;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  color: #eee;
+  transition: background-color .2s;
+}
+
+.sidebar .primaryMenu a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.subMenu {
+  padding: 0;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li:active {
+  background-color: #0f8530;
+}
+
+.sidebar-btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  right: -50px;
+  border: 0;
+  box-sizing: border-box;
+  border-radius: 0;
+  border-right: 1px solid #999;
+  background: #085d20;
+  transition: .6s;
+}
+
+.sidebar-btn:focus {
+  outline: 0;
+}
+
+.sidebar span {
+  width: 35px;
+  height: 3px;
+  position: absolute;
+  display: block;
+  top: 24;
+  background: #eee;
+  transition: .4s;
+}
+
+.sidebar span:before {
+  content: '';
+  width: 35px;
+  height: 3px;
+  position: absolute;
+  display: block;
+  top: -10px;
+  background: #eee;
+  transition: .4s;
+}
+
+.sidebar span:after {
+  content: '';
+  width: 35px;
+  height: 3px;
+  position: absolute;
+  display: block;
+  top: 10px;
+  background: #eee;
+  transition: .4s;
+}
+
+.close-menu span {
+  background: transparent;
+}
+
+.close-menu span:before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.close-menu span:after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.fa-caret-left {
+  float: right;
+  margin-top: -11px;
+  padding: 15px;
+}
+
+.fa-caret-down {
+  float: right;
+  margin-top: -11px;
+  padding: 15px 13px;
+}
+
+.submenu {
+  padding: 0;
+  font-size: 90%;
+}
+
+.submenu li {
+  background-color: #053f16;
+  color: #eee;
+}
+
+.primaryMenu a li i {
+  margin-right: 15px;
+}

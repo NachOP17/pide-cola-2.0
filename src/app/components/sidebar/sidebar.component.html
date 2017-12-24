@@ -1,0 +1,23 @@
+<nav class="sidebar" [style.left]="isMenuOpen ? '0px' : '-250px'">
+  <ul class="primaryMenu">
+    <!-- <li><a href="#">Pedir Cola</a></li> -->
+    <a><li><i class="fa fa-user"></i> Perfil</li></a>
+    <a><li><i class="fa fa-thumbs-up"></i> Pedir Cola</li></a>
+    <a><li><i class="fa fa-car"></i> Dar Cola</li></a>
+    <a (click)="activeSubmenu()"><li>
+      <i class="fa fa-comments"></i>
+      Conversaciones
+          <i class="fa float-right" [class.fa-caret-left]="!isSubmenuOpen" [class.fa-caret-down]="isSubmenuOpen">
+          </i>
+    </li></a>
+    <ul *ngIf="chats" class="submenu" [style.display]="isSubmenuOpen ? 'block' : 'none'">
+      <a *ngFor="let chat of chats"><li><i class="fa fa-user-circle-o"></i> {{chat.name}} {{chat.lastName}}</li></a>
+    </ul>
+    <a href="#"><li><i class="fa fa-sign-out"></i> Cerrar Sesión</li></a>
+  </ul>
+  <button type="button" class="sidebar-btn" (click)="activeMenu()" [style.right]="isMenuOpen ? '0px' : '-50px'" >
+    <div [class.close-menu]="isMenuOpen">
+      <span></span>
+    </div>
+  </button>
+</nav>
