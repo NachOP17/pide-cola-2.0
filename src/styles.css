@@ -2,6 +2,7 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .bg-img {
@@ -26,6 +27,10 @@ body {
 .btn-outline-secondary {
   color: #eee !important;
   border-color: #eee !important;
+}
+
+.btn-outline-secondary:hover {
+  border-color: #ccc !important;
 }
 
 .btn-outline-secondary:hover {

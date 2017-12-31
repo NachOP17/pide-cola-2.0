@@ -1,22 +1,8 @@
 
   <div id="mensajes" [style.bottom]="inputIsOpen ? '200px' : '60px'">
-<!--         Mensaje Enviado por otra persona       -->
-      <div class="mensaje otros-mensajes">
-        <div class="nombre text-center">
-          <h4>Pedro Pérez</h4>
-        </div>
-        <div class="info-msj">
-          <p><strong>Zona:</strong> San Antonio.<p>
-          <p><strong>Hora:</strong> 1:00 pm</p>
-          <p><strong></strong></p>
-        </div>
-        <div class="botones text-center">
-          <button class="btn btn-outline-secondary text-center">Dar Cola</button>
-        </div>
-      </div>
 
-      <!--         Mensaje Enviado por otra persona       -->
-      <div class="mensaje otros-mensajes">
+  <!--
+    <div class="mensaje otros-mensajes">
         <div class="nombre text-center">
           <h4>Carmen Castillo</h4>
         </div>
@@ -30,7 +16,7 @@
         </div>
       </div>
 
-      <!--         Mensaje Enviado por otra persona       -->
+
       <div class="mensaje otros-mensajes">
         <div class="nombre text-center">
           <h4>Roberto Gómez</h4>
@@ -45,7 +31,7 @@
         </div>
       </div>
 
-      <!--         Mensaje Enviado por otra persona       -->
+
       <div class="mensaje otros-mensajes">
         <div class="nombre text-center">
           <h4>Juan Rodriguez</h4>
@@ -59,12 +45,29 @@
           <button class="btn btn-outline-secondary text-center">Dar Cola</button>
         </div>
       </div>
+-->
+      <!--      Mensaje enviado por otra persona      -->
+      <div class="mensaje otros-mensajes">
+        <div class="nombre">
+          <img class="rounded-circle" src="../../../assets/img/pedro-perez.jpg">
+          <a href=""><h4>Pedro Pérez</h4></a>
+        </div>
+        <div class="info-msj">
+          <p><strong>Zona:</strong> San Antonio.<p>
+          <p><strong>Hora:</strong> 1:00 pm</p>
+          <p><strong></strong></p>
+        </div>
+        <div class="botones text-center">
+          <button class="btn btn-outline-secondary text-center">Dar Cola</button>
+        </div>
+      </div>
 
       <!--        Mensaje enviado por mi        -->
       <div *ngIf="myMessage[0]" class="espacio-mi-mensaje">
         <div class="mi-mensaje mensaje">
-          <div class="nombre text-center">
-            <h4>Yo</h4>
+          <div class="nombre">
+            <img class="rounded-circle" src="../../../assets/img/yo.jpg">
+            <a href=""><h4>Yo</h4></a>
           </div>
           <div class="info-msj">
             <p><strong>Lugares a donde voy:</strong> {{myMessage[0].places}}<p>

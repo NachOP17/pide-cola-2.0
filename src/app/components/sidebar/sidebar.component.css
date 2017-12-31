@@ -127,3 +127,7 @@
 .primaryMenu a li i {
   margin-right: 15px;
 }
+
+.chat {
+  padding-left: 20px !important;
+}

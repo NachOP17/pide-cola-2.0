@@ -1,8 +1,9 @@
 #mensajes {
+  font-family: 'Roboto', sans-serif;
   position: fixed;
   top: 50px;
   width: 100%;
-  bottom: 60px;
+  bottom: 36px !important;
   right: 0;
   left: 0;
   overflow: scroll;
@@ -10,7 +11,7 @@
 
 .mensaje {
   border-radius: 30px;
-  padding: 3px 20px;
+  padding: 20px;
   width: 300px;
   margin: 10px 20px;
 }
@@ -18,10 +19,6 @@
 .otros-mensajes {
   background-color: #3192b6;
   border-bottom-left-radius: 0px;
-}
-
-.nombre {
-  border-bottom: 1px solid #ADD9FF;
 }
 
 .info-msj {
@@ -42,4 +39,19 @@
 
 .btn-outline-danger {
   color: #eee !important;
+}
+
+.nombre a {
+  color: #232323;
+}
+
+img {
+  display: inline;
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+h4 {
+  display: inline;
 }

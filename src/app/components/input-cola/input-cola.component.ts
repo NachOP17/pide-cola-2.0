@@ -32,6 +32,14 @@ export class InputColaComponent implements OnInit {
     this.colaMessagesService.sendInputOpen(this.isInputOpen);
   }
 
+  fieldsAreNotFilled() {
+    if ((this.myMessage.time == '') || (this.myMessage.places == '')) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   onSubmit({value, valid}:{value:ColaMessages, valid:boolean}) {
     if (valid) {
       if (this.hola.length == 0) {

@@ -11,7 +11,7 @@
           </i>
     </li></a>
     <ul *ngIf="chats" class="submenu" [style.display]="isSubmenuOpen ? 'block' : 'none'">
-      <a *ngFor="let chat of chats"><li><i class="fa fa-user-circle-o"></i> {{chat.name}} {{chat.lastName}}</li></a>
+      <a *ngFor="let chat of chats"><li class="chat">{{chat.name}} {{chat.lastName}}</li></a>
     </ul>
     <a href="#"><li><i class="fa fa-sign-out"></i> Cerrar Sesión</li></a>
   </ul>

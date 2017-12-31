@@ -1,6 +1,6 @@
 <form #f="ngForm"  (ngSubmit)="onSubmit(f)" [style.bottom]="isInputOpen ? '0px' : '-255px'">
   <div class="text-center">
-    <a class="btn information-btn" (click)="activeInput()"><h4>Información<i class="fa float-right" [class.fa-angle-down]="isInputOpen" [class.fa-angle-left]="!isInputOpen"></i></h4></a>
+    <a class="btn information-btn" (click)="activeInput()"><h4>Información</h4><i class="fa float-right fa-3x" [class.fa-angle-down]="isInputOpen" [class.fa-angle-left]="!isInputOpen"></i></a>
   </div>
   <div class="form-group container">
     <label for="time">Hora de salida</label>
@@ -9,6 +9,6 @@
     <textarea class="form-control" [(ngModel)]="myMessage.places" name="places" placeholder="Lugares a donde voy" required></textarea>
   </div>
   <div class="text-center">
-    <input type="submit" class="btn btn-outline-secondary" value="Pedir Cola" />
+    <input [disabled]="fieldsAreNotFilled()" type="submit" class="btn btn-outline-secondary" value="Pedir Cola" />
   </div>
 <form>

@@ -1,10 +1,10 @@
 form {
+  font-family: 'Roboto', sans-serif;
   position: fixed;
   background-color: #085d20;
   width: 100%;
   color: #eee;
-  padding-top: 15px;
-  padding-bottom: 5px;
+  padding: 3px 0 5px 0;
   transition: .6s;
 }
 
@@ -28,4 +28,13 @@ form label {
   width: 90%;
   color: #000;
   cursor: pointer;
+}
+
+h4 {
+  display: inline;
+}
+
+.fa {
+  margin-top: -12px;
+  margin-bottom: -20px;
 }
