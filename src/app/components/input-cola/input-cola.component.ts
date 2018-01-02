@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ColaMessagesService } from '../../services/cola-messages.service';
 import { ColaMessages } from '../../models/ColaMessages';
 import { Router } from '@angular/router';
@@ -10,6 +10,9 @@ import { Router } from '@angular/router';
 })
 export class InputColaComponent implements OnInit {
 
+  @Input() inputBtnText:string;
+
+  darCola:boolean = false;
   isInputOpen:boolean = false;
 
   myMessage:ColaMessages = {
@@ -25,6 +28,9 @@ export class InputColaComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    if (this.inputBtnText == "Dar Cola") {
+      this.darCola = true;
+    }
   }
 
   activeInput() {

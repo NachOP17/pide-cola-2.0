@@ -3,12 +3,20 @@
     <a class="btn information-btn" (click)="activeInput()"><h4>Información</h4><i class="fa float-right fa-3x" [class.fa-angle-down]="isInputOpen" [class.fa-angle-left]="!isInputOpen"></i></a>
   </div>
   <div class="form-group container">
-    <label for="time">Hora de salida</label>
-    <input type="time" class="form-control" [(ngModel)]="myMessage.time" name="time" placeholder="HH:mm" required/>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+        <label for="time">Hora de salida</label>
+        <input type="time" class="form-control" [(ngModel)]="myMessage.time" name="time" placeholder="HH:mm" required/>
+      </div>
+      <div *ngIf="darCola" class="col-lg-9 col-md-8 col-sm-6 col-6">
+        <label for="free-seats">Puestos disponibles</label>
+        <input type="number" class="form-control" name="free-seats" placeholder="1" required>
+      </div>
+    </div>
     <label form="places">Lugares a donde voy</label>
     <textarea class="form-control" [(ngModel)]="myMessage.places" name="places" placeholder="Lugares a donde voy" required></textarea>
   </div>
   <div class="text-center">
-    <input [disabled]="fieldsAreNotFilled()" type="submit" class="btn btn-outline-secondary" value="Pedir Cola" />
+    <input [disabled]="fieldsAreNotFilled()" type="submit" class="btn btn-outline-secondary" value="{{inputBtnText}}" />
   </div>
 <form>

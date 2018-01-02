@@ -9,10 +9,13 @@ import { FlashMessagesService } from 'angular2-flash-messages';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { PedirColaComponent } from './components/pedir-cola/pedir-cola.component';
+import { DarColaComponent } from './components/dar-cola/dar-cola.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { InputColaComponent } from './components/input-cola/input-cola.component';
 import { ColaMessagesComponent } from './components/cola-messages/cola-messages.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 import { UserService } from './services/user.service';
 import { ColaMessagesService } from './services/cola-messages.service';
@@ -26,6 +29,18 @@ const routes: Routes = [
     path: 'pedir-cola',
     component: PedirColaComponent,
     pathMatch: 'full'
+  }, {
+    path: 'dar-cola',
+    component: DarColaComponent,
+    pathMatch: 'full'
+  }, {
+    path: 'chat',
+    component: ChatComponent,
+    pathMatch: 'full'
+  }, {
+    path: 'perfil',
+    component: PerfilComponent,
+    pathMatch: 'full'
   }
 ];
 
@@ -34,10 +49,13 @@ const routes: Routes = [
     AppComponent,
     LoginComponent,
     PedirColaComponent,
+    DarColaComponent,
     SidebarComponent,
     NavbarComponent,
     InputColaComponent,
-    ColaMessagesComponent
+    ColaMessagesComponent,
+    PerfilComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,
